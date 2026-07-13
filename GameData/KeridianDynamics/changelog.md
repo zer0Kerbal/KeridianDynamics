@@ -3,11 +3,11 @@
 | modName    | Keridian Dynamics (KDVA) by Eleusis La Arwall                     |
 | ---------- | ----------------------------------------------------------------- |
 | license    | CC-BY-SA-4.0+ARR                                                  |
-| author     | Eleusis La Arwall and zer0Kerbal                                  |
-| forum      | (https://forum.kerbalspaceprogram.com/index.php?/topic/202945-*/) |
-| github     | (https://github.com/zer0Kerbal/zer0Kerbal/KeridianDynamics)       |
-| curseforge | (https://www.curseforge.com/kerbal/ksp-mods/KeridianDynamics)     |
-| spacedock  | (https://spacedock.info/mod/308)                                  |
+| author     | Eleusis La Arwall, zer0Kerbal, and Jaheay                          |
+| forum      | (<https://forum.kerbalspaceprogram.com/index.php?/topic/202945-*/>) |
+| github     | (<https://github.com/zer0Kerbal/zer0Kerbal/KeridianDynamics>)       |
+| curseforge | (<https://www.curseforge.com/kerbal/ksp-mods/KeridianDynamics>)     |
+| spacedock  | (<https://spacedock.info/mod/308>)                                  |
 | ckan       | KeridianDynamicsVesselAssembly                                    |
 
 * 📌 Pinned
@@ -16,6 +16,39 @@
     * [ModularManagement (MM)](https://www.curseforge.com/kerbal/ksp-mods/ModularManagement) or [Module Manager](https://forum.kerbalspaceprogram.com/index.php?/topic/50533-*/)
   * search `kd`, `kdva` in editors
   * ghostparts.cfg has been updated and temporarily added for 3D Printer
+
+## 0.8.99.8 - Cleanup and Modernization
+
+### Changes 0.8.99.8
+
+#### Parts and balance 0.8.99.8
+
+* Rebalanced construction, launch, workshop, refinery, and recycling hardware
+* Updated crew capacities and selected part masses
+* Added stock inventory and ground placement support for portable launch and recycle sites when KIS is absent
+* Removed Stock SCON part additions when used with KD.
+* Fixed SCON Ratios which previously had a 1% Ore-> Metal Ratio created 5x mass when converting metal to rocket parts.
+
+#### Station and cargo tanks 0.8.99.8
+
+* Consolidated matching ST and T tanks when B9 Part Switch is installed
+* Updated B9 tank volumes and added Community Resource Pack `MetallicOre` storage
+* Categorized station and cargo tanks consistently under Payload
+
+#### Compatibility 0.8.99.8
+
+* Moved conditional B9 and Not So SimpleConstruction behavior into the mod's Compatibility layer
+* Hid duplicate Not So SimpleConstruction launchpad, recycler, auger, stake, and mallet parts
+* Updated KIS integration so portable site parts remain usable without KIS
+* Updated `KD-NoCargoTanks` for consolidated cargo variants
+* Updated `KD-NoStationTanks` to restore legacy cargo tanks when station tanks are disabled
+
+#### Localization and cleanup 0.8.99.8
+
+* Reworked English part names, descriptions, converter actions, and legacy-part labels
+* Removed the Ore Sample experiment and stock drill science module
+
+---
 
 ## Version 0.8.99.7-prerelease - `<#8 Please Read the Instructions>` edition
 
@@ -155,7 +188,7 @@
   * kd-recycler-small.cfg
   * kd-recycler.cfg
   * kd-SIMPLEXColonies-OASIS.cfg
-  * kd-vab-mobile.cfg 
+  * kd-vab-mobile.cfg
 * Can search `kd`, `kdva` in editors
 * ghostparts.cfg has been updated and temporarily added for renamed parts
 
@@ -176,7 +209,7 @@
   * kd-LaunchSite.cfg v1.1.1.0
   * kd-orbital-hangar.cfg v1.1.1.0
   * kd-pad.cfg v1.1.1.0
-  * kd-pam-small.cfg v1.1.1.0 
+  * kd-pam-small.cfg v1.1.1.0
   * kd-PAM.cfg v1.1.1.0
   * kd-RecycleSite.cfg v1.1.1.0
   * kd-recycler-small.cfg v1.1.1.0
